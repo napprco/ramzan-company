@@ -13,6 +13,8 @@ html {
   --workBtnColor: #22d497;
   --featureHeaderColor: #3734a9;
   --blackColor: #000;
+  --numberBg: #1b1c31;
+
   --footerTextColor: rgba(0, 0, 0, 0.6);
   --serviceItemBg: rgba(55, 52, 169, 0.14);
   --primaryFont: "Manrope", sans-serif;
@@ -280,6 +282,9 @@ Menu section
   width: 120px;
   object-fit: cover;
 }
+.aws img {
+  width: 60px;
+}
 .company-names {
   width: 100%;
   display: flex;
@@ -295,6 +300,9 @@ Menu section
   .single-client img {
     width: 110px;
   }
+  .aws img {
+    width: 60px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -304,11 +312,206 @@ Menu section
     padding-inline: 4rem;
   }
   .single-client img {
-    width: 180px;
+    width: 150px;
   }
 
   .company-names {
     justify-content: center;
     gap: 6rem;
   }
+}
+
+/*Features Section */
+
+.features-section {
+  padding-block: 2.5rem;
+  padding-inline: 0.7rem;
+  width: 100%;
+}
+
+.feature-title {
+  font-family: var(--secondaryFont);
+  color: var(--featureHeaderColor);
+  font-size: 18px;
+}
+.feature-text {
+  color: var(--footerTextColor);
+  text-align: justify;
+  padding-right: 2.5rem;
+  font-family: var(--secondaryFont);
+}
+.feature-img-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-img {
+  position: relative;
+}
+.vector-img {
+  position: absolute;
+  bottom: -2rem;
+  left: -1.4rem;
+  z-index: -1;
+}
+
+.elipsis {
+  position: absolute;
+  top: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .features-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  .feature-header {
+    font-weight: 600;
+    font-family: var(--secondaryFont);
+  }
+  .feature-text {
+    max-width: 25rem;
+  }
+}
+
+.services-section {
+  padding-top: 1rem;
+  padding-inline: 0.6rem;
+  min-height: 100vh;
+  background: var(--featureHeaderColor);
+}
+.service-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+.service-header {
+  color: var(--whiteColor);
+  font-weight: 800;
+  font-size: 40px;
+}
+.service-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+.service-item-header h1,
+.service-item-header h3 {
+  color: var(--whiteColor);
+  margin-block: 0.3rem;
+}
+.service-item-header h1 {
+  font-size: 1.4rem;
+}
+.service-item-header h3 {
+  color: var(--startedBtnColor);
+  font-size: 14px;
+}
+.service-item-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--numberBg);
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number p {
+  color: #ffffffff;
+  font-family: 700;
+  font-size: 32px;
+}
+
+.single-service-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.single-service-details {
+  margin-top: 1rem;
+}
+.single-service-details h3 {
+  color: var(--whiteColor);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.single-service-details p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.service-item-2 {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-video {
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 3rem;
+  max-width: 500px;
+  z-index: 10;
+}
+.service-video img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: var(--whiteColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.video-icon i {
+  font-size: 1.5rem;
+  color: var(--startedBtnColor);
+}
+@media screen and (min-width: 900px) {
+  .service-items {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2.5rem;
+  }
+  .service-link {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+  }
+  .single-service-details p {
+    max-width: 17rem;
+  }
+}
+
+.service-vector {
+  position: absolute;
+  right: -1.2rem;
+  bottom: 3.5rem;
+  width: 60px;
+  height: 60px;
 }
