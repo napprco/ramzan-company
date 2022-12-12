@@ -2,7 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -69,13 +69,14 @@ Menu section
 */
 
 .hero-section {
-  min-height: 100vh;
-  padding-top: 1.5rem;
+  min-height: 65vh;
+  padding-bottom: 5rem;
   width: 100%;
   background: var(--featureHeaderColor);
 }
 .mobile-menu {
-  margin-top: -1.5rem;
+  top: -1.5rem;
+  left: 0;
   width: 400px;
   min-height: 400px;
   z-index: 999;
@@ -94,9 +95,10 @@ Menu section
 
 .menu-icon-container {
   position: fixed;
-  right: 6rem;
+  right: 1rem;
+  top: 1rem;
   font-size: 2rem;
-  padding-top: 1rem;
+
   color: var(--startedBtnColor);
   cursor: pointer;
 }
@@ -315,7 +317,9 @@ Menu section
   .single-client img {
     width: 150px;
   }
-
+  .aws img {
+    width: 80px;
+  }
   .company-names {
     justify-content: center;
     gap: 6rem;
@@ -536,7 +540,6 @@ Menu section
 }
 .in-house {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }

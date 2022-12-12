@@ -1,0 +1,51 @@
+@media screen and (max-width: 280px) {
+  .banner-section {
+    margin-top: -0.5rem;
+  }
+  .banner-header {
+    margin-left: -1rem;
+  }
+  .banner-links {
+    flex-direction: column;
+  }
+  .menu-icon-container {
+    right: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero-section {
+    min-height: 60vh;
+    padding-inline: 1rem;
+    display: flex;
+  }
+  .menu-icon-container {
+    right: 0.3rem;
+  }
+  .banner-header {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  .banner-links {
+    gap: 1rem;
+  }
+  .start-link {
+    width: 150px;
+    height: 50px;
+  }
+  .show-work-link {
+    width: 50px;
+    height: 50px;
+  }
+  .clients-container {
+    padding: 1rem;
+  }
+  /* .single-client img {
+    width: 100px;
+  } */
+  .company-names {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-content: center;
+  }
+}
