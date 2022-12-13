@@ -11,6 +11,50 @@
   .menu-icon-container {
     right: 0.2rem;
   }
+  .clients-section {
+    padding-inline: 0.5rem;
+  }
+  .single-client {
+    margin-left: 2rem;
+  }
+  .company-names {
+    width: 100%;
+  }
+
+  .single-client img {
+    width: 85px;
+  }
+  /*Features section*/
+
+  .feature-title {
+    font-size: 12px;
+  }
+  .feature-header {
+    font-size: 1rem;
+  }
+  .feature-text {
+    font-size: 0.65rem;
+  }
+  .in-house {
+    margin-left: 0;
+    display: block;
+  }
+
+  .item-5 p {
+    padding-left: 2.5rem;
+  }
+  .third-item-4 p {
+    padding-right: 2.6rem;
+  }
+  .fourth-item-3 p {
+    padding-left: 3rem;
+  }
+  .fifth-item-2 p {
+    padding-right: 2.6rem;
+  }
+  .single-detail p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -47,5 +91,53 @@
     display: grid;
     grid-template-columns: 150px 150px;
     justify-content: center;
+  }
+  /*services*/
+  .service-header {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .service-item-header h1 {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .single-service-details h3 {
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+  .single-service-item {
+    display: flex;
+  }
+  .number {
+    width: 50px;
+    height: 50px;
+  }
+  .number p {
+    color: #ffffffff;
+    font-family: 600;
+    font-size: 13px;
+  }
+  .single-service-details {
+    margin-left: 1rem;
+  }
+  .single-feature h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .footer-header h1,
+  .footer-item h1 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .in-house {
+    margin-left: -2.5rem;
+    display: grid;
+    grid-template-columns: 150px 150px;
   }
 }
