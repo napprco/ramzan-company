@@ -221,6 +221,7 @@ Menu section
 .banner-links {
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
   gap: 3rem;
 }
 
@@ -281,13 +282,36 @@ Menu section
 
 .single-client {
   margin-top: 0.6rem;
+  width: 200px;
 }
+
 .single-client img {
   width: 120px;
   object-fit: cover;
 }
 .aws img {
   width: 60px;
+}
+.google-logo img {
+  margin-left: -1.1rem;
+}
+.tensor-flow-logo img {
+  margin-left: -0.8rem;
+}
+.anteler-logo img {
+  margin-left: -1.2rem;
+}
+.mod-security-logo img {
+  margin-left: -0.4rem;
+}
+.radar-logo img {
+  margin-left: -0.2rem;
+}
+.postgres-logo img {
+  margin-left: -1.3rem;
+}
+.infrabase-logo img {
+  margin-left: -0.4rem;
 }
 .company-names {
   width: 100%;
